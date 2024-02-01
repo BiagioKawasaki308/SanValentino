@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pazienza!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7f7;
+            text-align: center;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        #centeredImage {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        #message {
+            font-size: 2em;
+            margin-top: 20px;
+            color: #ff4081;
+        }
+
+        #buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-image: linear-gradient(to right, #ff66a3, #ff4081);
+            transition: background-image 0.3s ease;
+        }
+
+        #home-btn {
+            background-color: #ff4081;
+        }
+
+        #moving-btn {
+            background-color: #4caf50;
+            animation: moveButton 2s infinite ease-in-out;
+        }
+
+        @keyframes moveButton {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(20px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+        <div id="message">Ne sei sicura?</div>
+        <div id="buttons">
+            <a href="index.html" id="home-btn" class="btn">No</a>
+            <button id="moving-btn" class="btn" onclick="moveButton()">Si!</button>
+        </div>
+        <img id="centeredImage" src="https://pbs.twimg.com/media/FPlrvk2UcAAplYl?format=jpg&name=900x900" alt="Centrale">
+    </div>
+
+    <script>
+        function moveButton() {
+            alert("Non succede niente!");
+        }
+    </script>
+</body>
+</html>

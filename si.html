@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grazie per aver accettato!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7f7;
+            text-align: center;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #message {
+            font-size: 2em;
+            margin-top: 20px;
+            color: #ff4081;
+        }
+
+        #flowers {
+            margin-top: 20px;
+        }
+
+        @keyframes flowerAnimation {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-20px) rotate(45deg);
+            }
+            50% {
+                transform: translateY(0) rotate(0deg);
+            }
+            75% {
+                transform: translateY(-20px) rotate(-45deg);
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        .flower {
+            display: inline-block;
+            font-size: 2em;
+            color: #4caf50;
+            animation: flowerAnimation 2s infinite ease-in-out;
+        }
+
+        #centerImage {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="message">Ti amo tantissimo</div>
+        <div id="flowers">
+            <span class="flower">&#127799;</span>
+            <span class="flower">&#127799;</span>
+            <span class="flower">&#127799;</span>
+            <span class="flower">&#127799;</span>
+        </div>
+        <div id="centerImage">
+            <img src="https://external-preview.redd.it/tezB3SoEWX_-FVPbrQIDy09Cfza-PnY7kEDIMB0ilWw.jpg?auto=webp&s=9aaa6ff24fe2c1a8afe42f1a63906371206c10d0" alt="Celebrazione" style="max-width: 100%; border-radius: 10px;">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito San Valentino Hello Kitty</title>
+    <style>
+            body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7f7;
+            text-align: center;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        #question {
+            font-size: 2em;
+            margin-top: 20px;
+            color: #ff4081;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-image: linear-gradient(to right, #ff66a3, #ff4081);
+            transition: background-image 0.3s ease;
+        }
+
+        #yes-btn {
+            background-color: #ff4081;
+        }
+
+        #no-btn {
+            background-color: #4caf50;
+        }
+
+        .btn:hover {
+            background-image: linear-gradient(to right, #ff4081, #ff66a3);
+        }
+
+        @media only screen and (max-width: 600px) {
+            #question {
+                font-size: 1.5em;
+            }
+
+            .btn {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="image" src="https://media1.tenor.com/m/JsskaUSwVlsAAAAC/cat-cat-love.gif" alt="Hello Kitty San Valentino">
+        <div id="question">Vuoi essere la mia Valentina?</div>
+        <a href="si.html" id="yes-btn" class="btn">Sì</a>
+        <a href="no.html" id="no-btn" class="btn">No</a>
+    </div>
+</body>
+</html>
